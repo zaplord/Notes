@@ -1,1 +1,19 @@
-h1 {}
+
+body { margin:0;}
+h1 { text-align: center;
+  color: Green;
+}
+.navone{
+    background-color: rgb(36, 36, 36);
+padding:  0px;
+margin: 0px;
+}
+.nav {  overflow: auto;
+    width: 100%;}
+.nav a{   text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    
+}
