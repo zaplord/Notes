@@ -11,13 +11,22 @@ min-height: 100vh;}
   color: rgb(0, 0, 0);
 }
 
+
+
+
+
  h1 {
+
+  
             text-align: center;
-            color: #04AA6D;
+         background: linear-gradient(180deg, #00bd48 35%, #5f94ca 100%);
+           -webkit-background-clip: text;
+           color:transparent;
             margin-bottom: 0px;
+             
+            padding-bottom: 5px;
             
-            padding-bottom: 0px;
-            border-bottom: 2px solid #000000b6;
+           
         }
 
 
@@ -28,13 +37,17 @@ min-height: 100vh;}
  
     
 }
+
 .nav {
 font-size: 45px;
-background-color: #04AA6D;
-margin: 0;
+ background: linear-gradient(90deg, #3498db 0%, #2c3e50 100%);
+margin: 30px;
 padding:0;
 display: flex;
 justify-content: center;
+border-radius: 15px;
+ border-bottom: 2px solid #000000b6;
+ border-top: 2px solid #000000b6;
 }
 
 
@@ -47,11 +60,13 @@ justify-content: center;
         }
 
         
-.nav ul {list-style-type: none; 
+.nav ul {
+      list-style-type: none; 
     display: flex;
     width: 100%;
     justify-content: space-around;
-    padding: 5px 400px;
+    padding: 5px clamp(10px, 5%, 100px); /* Responsive min/ideal/max values */
+
 }
 
 /* This part makes the Navigation more animative, Border radius makes the edges nice and smooth, box shadow does a shadow around the white box and gives it some depth */
@@ -63,4 +78,7 @@ justify-content: center;
     box-shadow: 8px 8px 8px 8px #00000021;
 }
 
-
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;}
