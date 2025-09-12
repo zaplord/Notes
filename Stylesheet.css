@@ -1,19 +1,66 @@
+*{ margin:0;
+padding: 0;
+box-sizing: border-box;}
 
-body { margin:0;}
-h1 { text-align: center;
-  color: Green;
+body {background: rgba(255, 255, 255, 0.76);
+min-height: 100vh;}
+
+
+.nav li a:hover {
+  background-color: #9b9b9b;
+  color: rgb(0, 0, 0);
 }
-.navone{
-    background-color: rgb(36, 36, 36);
-padding:  0px;
-margin: 0px;
-}
-.nav {  overflow: auto;
-    width: 100%;}
-.nav a{   text-align: center;
-    color: white;
+
+ h1 {
+            text-align: center;
+            color: #04AA6D;
+            margin-bottom: 0px;
+            
+            padding-bottom: 0px;
+            border-bottom: 2px solid #000000b6;
+        }
+
+
+.nav a{   
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    padding: 15px;
-    display: block;
+    padding: 0, auto;
+ 
     
 }
+.nav {
+font-size: 45px;
+background-color: #04AA6D;
+margin: 0;
+padding:0;
+display: flex;
+justify-content: center;
+}
+
+
+.nav li a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            padding: 2px 20px;
+            display: inline-block;
+            transition: all 0.5s ease; /* Smooth transition for hover effects */
+        }
+
+        
+.nav ul {list-style-type: none; 
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 5px 400px;
+}
+
+/* This part makes the Navigation more animative, Border radius makes the edges nice and smooth, box shadow does a shadow around the white box and gives it some depth */
+.nav li a:hover:not(.active) {
+    border-radius: 10px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+    box-shadow: 8px 8px 8px 8px #00000021;
+}
+
+
