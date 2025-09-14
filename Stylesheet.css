@@ -7,10 +7,17 @@ min-height: 100vh;
  animation: smoothAppear 0.8s ease-out forwards;
   opacity: 0; }
 
+details > summary {
+  display: block;
+}
 
 .nav li a:hover {
   background-color: #9b9b9b;
   color: rgb(0, 0, 0);
+}
+
+.First {margin: 4px;
+  text-align: center;
 }
 
 @keyframes smoothAppear {
@@ -23,6 +30,9 @@ min-height: 100vh;
     transform: translateY(0);
   }
 } 
+
+.notes{ font-size: 20px;
+}
  .month:hover {
             background:#ffffff}
  .months {
@@ -59,7 +69,7 @@ h2 {  text-align: center;
            -webkit-background-clip: text;
            color:transparent;
             margin-bottom: 0px;
-           
+           font-size: 50px;
             padding-bottom: 5px;
             
            
@@ -87,7 +97,6 @@ h2 {  text-align: center;
         }
           .notes {
             border-radius: 15px;
-
             display: none;
             background: rgba(184, 184, 184, 0.24);
             padding: 20px;
@@ -103,8 +112,12 @@ h2 {  text-align: center;
          .days-container:target ~ .months {
             display: none;
         }
-
-        
+        .First:hover{font-weight: bold;
+        cursor: pointer;
+          background: linear-gradient(180deg, #00bd48 35%, #5f94ca 100%);
+           -webkit-background-clip: text;
+           color:transparent;
+      }
 .nav a{   
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -112,6 +125,7 @@ h2 {  text-align: center;
  
     
 }
+
 
 .nav {
 font-size: 45px;
