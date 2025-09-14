@@ -30,7 +30,8 @@ details > summary {
     transform: translateY(0);
   }
 } 
-
+.rights { margin: 20px;
+  text-decoration: none;}
 .notes{ font-size: 20px;
 }
  .month:hover {
@@ -53,8 +54,8 @@ details > summary {
  border-top: 2px solid #000000b6;
 text-decoration: none;
         }
-
-h2 {  text-align: center;
+.Indexlogo {margin-left: 43%;}
+.h2dec {  text-align: center;
          background: linear-gradient(180deg, #00bd48 35%, #5f94ca 100%);
            -webkit-background-clip: text;
            color:transparent;
